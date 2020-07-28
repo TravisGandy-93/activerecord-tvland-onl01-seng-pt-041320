@@ -4,6 +4,6 @@ class Show < ActiveRecord::Base
    belongs_to :network
    
    def actors_list
-     self.actors.all.each{|a| a.full_name}
+     self.actors.all.each{|a| a}
    end 
 end
